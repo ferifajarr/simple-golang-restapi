@@ -21,5 +21,6 @@ func main() {
 	r.GET("/api-talent/talent", talentcontroller.Index)
 	r.GET("/api-talent/talent/:id", talentcontroller.Show)
 	r.POST("/api-talent/create", talentcontroller.Create)
+	r.DELETE("/api-talent/create", talentcontroller.Delete)
 	r.Run()
 }
